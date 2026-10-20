@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*db_test.py
+*test1.py
+*.csv
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Credenciais
+.env
+.env.*
+!.env.example
+neo4j_docker.yml
+neo4j.ps1
+
+# Editores
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+plugins/
+readme/
+
+# Bancos e índices locais
+*.sqlite
+*.sqlite3
+*.db
+chroma/
+chroma_db/
+db/
+data/
+
+# Arquivos temporários
+tmp/
+temp/

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  projeto-a:
+    image: neo4j:latest
+    container_name: neo4j-projeto-a
+    ports:
+      - "7474:7474"   # HTTP / Browser (Host:Container)
+      - "7687:7687"   # Bolt Driver (Host:Container)
+    environment:
+      - NEO4J_AUTH=neo4j/senha123
+
+  projeto-b:
+    image: neo4j:latest
+    container_name: neo4j-projeto-b
+    ports:
+      - "7475:7474"   # HTTP / Browser alterado para 7475
+      - "7688:7687"   # Bolt Driver alterado para 7688
+    environment:
+      - NEO4J_AUTH=neo4j/senha123
